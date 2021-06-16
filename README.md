@@ -28,7 +28,7 @@ Once the setup steps are done you can just launch the lab using `terraform apply
 * First-DC = Domain Controller of the domain first.local (10.0.1.100)
 * Second-DC = Domain Controller of the domain second.local (in a trust with first) (10.0.2.100)
 * User-Server = Server to be the foothold on. Any domain user can RDP to this box (10.0.1.50)
-* Attack-Server = Debian server set up with Covenent and Impacket for you to jump in and attack from (10.0.1.20)
+* Attack-Server = Debian server set up with Covenent and Impacket for you to jump in and attack from (10.0.1.10)
 
 ## Setup
 ```
