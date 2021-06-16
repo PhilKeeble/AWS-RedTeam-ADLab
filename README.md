@@ -6,12 +6,13 @@ s lab consists of 3 servers across 2 domains. It includes almost all pure AD att
 
 Once the setup steps are done you can just launch the lab using `terraform apply` and it will do it all for you. After applying you will need to give the lab about 35 mins. When you apply it will complete and tell you a timestamp. Take that timestamp, add 35 minutes onto it and wait that time. That will give it the time it needs to do all the setup. After 35 mins it will be good to go.
 
-## Attacks Covered (plus all the ones you can do with just any default AD like pass the ticket, golden tickets etc)
+## Attacks Covered 
 
 * Kerberoasting
 * ASRepRoasting
 * Constrained Delegation (computer and user)
 * Unconstrained Delegation 
+* Resource Based Constrained Delegation
 * Write ACL of user 
 * Write ACL of computer
 * WriteDACL over domain 
@@ -23,6 +24,7 @@ Once the setup steps are done you can just launch the lab using `terraform apply
 * SMBSigning disabled on all machines for relay attacks 
 * Defender uninstalled so no need to worry about AV 
 * Multiple machines so you can practise tunneling, double hop problem, etc
+* All the default things like lateral movement, persistence, pass the hash, pass the ticket, golden tickets, silver tickets etc
 
 ## Machine Summary 
 
