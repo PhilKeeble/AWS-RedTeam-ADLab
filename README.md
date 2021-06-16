@@ -6,7 +6,7 @@ s lab consists of 3 servers across 2 domains. It includes almost all pure AD att
 
 Once the setup steps are done you can just launch the lab using `terraform apply` and it will do it all for you. After applying you will need to give the lab about 35 mins. When you apply it will complete and tell you a timestamp. Take that timestamp, add 35 minutes onto it and wait that time. That will give it the time it needs to do all the setup. After 35 mins it will be good to go.
 
-## Attacks Covered 
+## Attacks Covered (not an exlusive list) 
 
 * Kerberoasting
 * ASRepRoasting
@@ -22,6 +22,7 @@ Once the setup steps are done you can just launch the lab using `terraform apply
 * Cross domain trusts 
 * SMBSigning disabled on all machines for relay attacks 
 * Defender uninstalled so no need to worry about AV 
+* Multiple machines so you can practise tunneling, double hop problem, etc
 
 ## Machine Summary 
 
