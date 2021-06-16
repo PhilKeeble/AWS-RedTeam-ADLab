@@ -1,4 +1,5 @@
-# Basic AWS configuration which will grab our keys from ENV
+# Basic AWS configuration which will grab our keys from the AWS CLI
+# If you are not using the keys in the default profile of aws cli, then change below to the profile name 
 provider "aws" {
   profile = "default"
   region     = "eu-west-2"
@@ -165,20 +166,30 @@ resource "null_resource" "attack-server-setup" {
   provisioner "remote-exec" {
     inline = [
       "sudo apt update",
+      
+      # Install dotnet
       "wget https://packages.microsoft.com/config/debian/10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb",
       "sudo dpkg -i packages-microsoft-prod.deb",
       "sudo apt-get update",
       "sudo apt-get install -y apt-transport-https",
       "sudo apt-get update",
-      #"sudo apt-get install -y dotnet-sdk-5.0",
+      
+      # Install Covenant Stable
       "sudo apt-get install -y dotnet-sdk-3.1",
       "sudo apt-get install -y git",
-      #"git clone -b dev --recurse-submodules https://github.com/cobbr/Covenant",
       "git clone --recurse-submodules https://github.com/cobbr/Covenant",
+      
+      # Install Covenant Dev
+      #"sudo apt-get install -y dotnet-sdk-5.0",
+      #"git clone -b dev --recurse-submodules https://github.com/cobbr/Covenant",
+      
+      # Install PoshC2
       #"git clone https://github.com/nettitude/PoshC2.git",
       #"cd PoshC2",
       #"sudo ./Install.sh -b master -p /home/admin/PoshC2"
       #"cd ../"
+      
+      # Install Impacket
       "sudo apt install -y python3-pip",
       "git clone https://github.com/SecureAuthCorp/impacket.git",
       "cd impacket",
