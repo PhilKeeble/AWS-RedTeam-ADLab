@@ -81,3 +81,8 @@ access in browser on localhost
 
 For impackt you can run python3 psexec.py ... etc 
 ```
+# Credits 
+
+Massive credit to XPN with this project https://github.com/xpn/DemoLab. Almost all of the code I used is from this project and its blog post https://www.mdsec.co.uk/2020/04/designing-the-adversary-simulation-lab/. 
+
+I have just taken that, made it less mass-spinup focused and added the vulnerabilties I would want in an AD lab. 
