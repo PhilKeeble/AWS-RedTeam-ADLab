@@ -6,6 +6,8 @@ This lab consists of 3 servers across 2 domains. It includes almost all pure AD 
 
 Once the setup steps are done you can just launch the lab using `terraform apply` and it will do it all for you. After applying you will need to give the lab about 35 mins. When you apply it will complete and tell you a timestamp. Take that timestamp, add 35 minutes onto it and wait that time. That will give it the time it needs to do all the setup. After 35 mins it will be good to go.
 
+My blog post giving detailed setup information is here: https://philkeeble.com/automation/windows/activedirectory/AWS-RedTeam-ADLab-Setup/
+
 ## Attacks Covered 
 
 * Kerberoasting
