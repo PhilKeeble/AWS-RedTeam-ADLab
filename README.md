@@ -35,7 +35,7 @@ My blog post giving detailed setup information is here: https://philkeeble.com/a
 * User-Server = Server to be the foothold on. Any domain user can RDP to this box (10.0.1.50)
 * Attack-Server = Debian server set up with Covenent and Impacket for you to jump in and attack from (10.0.1.10)
 
-## Setup
+## Setup Notes (Detailed Info in blog linked at top of README)
 ```
 Terraform
 Install terraform
